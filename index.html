@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#work"><span lang="ko">작업으로 바로 가기</span><span lang="en">Skip to work</span></a>
 <header class="top">
   <a class="brand" href="#">KMG</a>
   <nav>
@@ -20,92 +21,72 @@
 </header>
 
 <main>
-<section class="hero">
-  <p class="eyebrow"><span lang="ko">제품 디자이너 · UI/UX · 게임 UI · 3D</span><span lang="en">Product designer · UI/UX · Game UI · 3D</span></p>
-  <h1>
-    <span lang="ko">흐름과 화면을 설계하고,<br>AI가 만든 결과를 끝까지 검증합니다.</span>
-    <span lang="en">I design the flow and the screens,<br>then check what AI builds until it works as designed.</span>
-  </h1>
-  <p class="lead">
-    <span lang="ko">김명기입니다. 사용자 흐름과 화면을 설계하고, AI 코딩 도구(Claude Code·Codex)에 줄 구현 명세를 쓴 뒤, 만들어진 결과를 명세와 하나씩 대조해 설계대로 작동할 때까지 고치게 합니다. 무엇을 만들지, 결과가 맞는지는 제가 판단합니다.</span>
-    <span lang="en">I'm Kim Myeong-gi. I map user flows and screens, write numbered specs for AI coding tools (Claude Code, Codex), and check each result against the spec until it behaves as designed. I decide what gets built and whether it's right.</span>
-  </p>
+<section class="hero banner style1">
+<div class="hero-copy content"><p class="eyebrow">KIM MYEONG-GI / PRODUCT DESIGNER</p>
+<h1><span lang="ko">화면을 디자인하고,<br>쓰임을 만듭니다.</span><span lang="en">Designing interfaces.<br>Making them work.</span></h1>
+<p class="lead"><span lang="ko">UI/UX와 게임 UI, 3D를 작업하는 김명기입니다. <br>화면을 설계하고 직접 써 보며 다듬습니다.</span><span lang="en">I'm Kim Myeong-gi, a designer working in UI/UX, game UI and 3D. <br>I design screens, test them in use, and refine the details.</span></p>
+<a class="action" href="#work"><span lang="ko">대표 작업 보기</span><span lang="en">Explore selected work</span> <span aria-hidden="true">↘</span></a>
+<p class="hero-index">UI/UX &nbsp; / &nbsp; GAME UI &nbsp; / &nbsp; 3D</p></div>
+<a href="#alo4obs" class="hero-art image" aria-label="ALO4OBS"><img src="assets/img/alo4obs-current-dark.webp" width="1440" height="1034" alt="ALO4OBS v0.10.5 live browser editor, dark theme" fetchpriority="high"><span class="art-label"><span>01 / ALO4OBS · <span lang="ko">실제 서비스 화면</span><span lang="en">Live browser editor</span></span><span aria-hidden="true">↗</span></span></a>
 </section>
 
 <section id="work">
-  <h2><span lang="ko">작업</span><span lang="en">Selected work</span></h2>
+  <div class="section-heading"><h2><span lang="ko">대표 작업</span><span lang="en">Selected work</span></h2><span class="muted">01 — 03 / 2025–2026</span></div>
 
-  <article class="project">
-    <div class="media two">
-      <img src="assets/img/alo4obs-motion.gif" alt="ALO4OBS panels rearranging automatically" loading="lazy">
-      <img src="assets/img/alo4obs-set.webp" alt="ALO4OBS promotional cards" loading="lazy">
-    </div>
-    <div class="text">
+  <article id="alo4obs" class="project spotlight style1 project-1">
+    <div class="media one framed">
+      <a class="image-trigger" href="assets/img/alo4obs-current-light.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/alo4obs-current-light.webp" width="1440" height="1202" alt="ALO4OBS v0.10.5 live browser editor with Sub 1 selected" data-caption-ko="ALO4OBS v0.10.5 웹 설정 화면" data-caption-en="ALO4OBS v0.10.5 browser editor" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
+    <p class="caption"><span lang="ko">v0.10.5 웹 설정 화면 · 2026.11.16 캡처</span><span lang="en">v0.10.5 browser editor · captured Nov 16, 2026</span></p></div>
+    <div class="text content">
       <p class="meta"><span lang="ko">개인 · 오픈소스(MIT) · 2026.10~</span><span lang="en">Solo · Open source (MIT) · Oct 2026–</span></p>
-      <h3>ALO4OBS</h3>
+      <h3>ALO4OBS</h3><p class="release">v0.10.5 · <span lang="ko">웹 설정 지원</span><span lang="en">Browser-based setup</span></p>
       <p class="sub"><span lang="ko">방송 패널 자동 배치 오버레이</span><span lang="en">Auto-layout overlay for OBS</span></p>
-      <p><span lang="ko">패널 최대 7개를 어떻게 켜고 꺼도 서로 가리지 않게 자동으로 배치하는 OBS 오버레이입니다. 기획·화면 설계·구현 명세·테스트·문서·배포를 혼자 맡았고, 코드는 제가 쓴 명세를 바탕으로 AI 코딩 도구가 작성했습니다.</span><span lang="en">An OBS overlay that keeps up to seven panels from overlapping, however they're toggled. I owned planning, screen design, specs, testing, docs, and release; AI coding tools wrote the code from my numbered specs.</span></p>
-      <ul>
-        <li><span lang="ko">패널 켜짐·꺼짐 조합 128가지를 실제 브라우저에서 모두 확인</span><span lang="en">All 128 on/off panel combinations checked in a real browser</span></li>
-        <li><span lang="ko">v0.8.0 기준 Node 테스트 189/189, Python 11/11 통과</span><span lang="en">v0.8.0: Node tests 189/189, Python 11/11 passing</span></li>
+      <p><span lang="ko">방송 패널을 자동으로 배치하는 OBS 오버레이입니다. 웹에서 Bento·Overlap 레이아웃을 설정한 뒤 개인 설정 ZIP 하나를 내려받아 적용합니다. 기획부터 화면 설계, 구현 명세, 검수와 배포까지 맡았습니다.</span><span lang="en">An OBS overlay that arranges stream panels automatically. Users configure a Bento or Overlap layout in the browser, then download a single Settings ZIP to apply it. I handled planning, interface design, implementation specs, testing, and release.</span></p>
+      <details class="evidence"><summary><span lang="ko">맡은 일과 설계 과정</span><span lang="en">Role &amp; design decisions</span></summary><ul>
         <li><span lang="ko">프로게이머 스트리머 피드백을 v0.7.1에 반영, 실제 라이브 방송에서 사용</span><span lang="en">Feedback from a pro-gamer streamer shipped in v0.7.1; used on real live streams</span></li>
-        <li><span lang="ko">설계 판단: 간격·여백을 슬라이더 하나로 합침("대부분의 스트리머는 디자이너가 아니다"), "패널 1~7"을 Main·Sub·Side로 바꿈</span><span lang="en">Design calls: merged gap and margin into one slider ("most streamers aren't designers"); renamed "Panel 1–7" to Main, Sub, Side</span></li>
-      </ul>
-      <p class="links"><a href="https://github.com/kmg200164/alo4obs">GitHub</a> · <a href="https://github.com/kmg200164/alo4obs/releases/latest"><span lang="ko">최신 릴리스</span><span lang="en">Latest release</span></a></p>
+        <li><span lang="ko">설정을 쉽게 고르도록 간격과 여백을 슬라이더 하나로 합쳤습니다. 패널 이름도 번호 대신 Main·Sub·Side로 구분했습니다.</span><span lang="en">Combined gap and margin into one slider to simplify setup, and replaced numbered panel names with Main, Sub, and Side.</span></li>
+      </ul></details>
+      <p class="links"><a class="action" href="https://kmg200164.github.io/alo4obs/"><span lang="ko">직접 사용해 보기</span><span lang="en">Try the editor</span> ↗</a><br><a href="https://github.com/kmg200164/alo4obs">GitHub</a> · <a href="https://github.com/kmg200164/alo4obs/releases/latest"><span lang="ko">최신 릴리스</span><span lang="en">Latest release</span></a></p>
     </div>
   </article>
 
-  <article class="project">
-    <div class="media two">
-      <img src="assets/img/finals-esc.webp" alt="Fan concept: transparent ESC menu" loading="lazy">
-      <img src="assets/img/finals-reload.webp" alt="Fan concept: gadget reload state indicator" loading="lazy">
-    </div>
-    <div class="text">
+  <article id="game-ui" class="project spotlight style1 project-2">
+    <div class="media one"><a class="image-trigger" href="assets/img/arc-raiders-skill-tree-v9.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/arc-raiders-skill-tree-v9-1600.webp" alt="ARC Raiders unofficial skill tree redesign, version 9" data-caption-ko="ARC Raiders 스킬 트리 V9 · 비공식 팬 디자인" data-caption-en="ARC Raiders skill tree V9 · Unofficial fan design" width="3840" height="3840" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a><p class="caption"><span lang="ko">ARC Raiders 스킬 트리 V9 · 비공식 팬 디자인</span><span lang="en">ARC Raiders skill tree V9 · Unofficial fan design</span></p></div>
+    <div class="text content">
       <p class="meta"><span lang="ko">개인 · 비공식 팬 작업</span><span lang="en">Solo · Unofficial fan work</span></p>
       <h3><span lang="ko">THE FINALS · ARC Raiders 팬 UI 제안</span><span lang="en">THE FINALS · ARC Raiders fan UI concepts</span></h3>
-      <p><span lang="ko">THE FINALS의 메인·로드아웃·복장·연습·월드 투어 화면을 다시 설계하고, ESC 메뉴 투명화와 재장전 상태 표시를 제안했습니다. ARC Raiders는 스킬 트리를 네 유형(Hunter·Explorer·Technician·Porter)으로 다시 짜고 V1~V9까지 고쳤습니다.</span><span lang="en">Redesigned THE FINALS main, loadout, outfit, practice, and World Tour screens, and proposed a transparent ESC menu and a clear reload state for gadgets. Rebuilt the ARC Raiders skill tree around four roles (Hunter, Explorer, Technician, Porter) across nine versions.</span></p>
-      <ul>
-        <li><span lang="ko">공식 Discord 팬웍스 채널 반응(2026.10.07 기준): ARC Raiders 「NEW SKILL TREE」 280개 이상, THE FINALS 「MAKE ESC TRANSPARENT」 102개 · 「RETURN SPONSOR LOBBY」 105개</span><span lang="en">Official Discord fanworks reactions (as of 2026-10-07): ARC Raiders "NEW SKILL TREE" 280+, THE FINALS "MAKE ESC TRANSPARENT" 102 and "RETURN SPONSOR LOBBY" 105</span></li>
-      </ul>
+      <p><span lang="ko">직접 플레이하며 불편했던 화면을 다시 설계한 비공식 팬 작업입니다. THE FINALS에는 배경이 비치는 ESC 메뉴와 재장전 상태 표시를 제안했습니다. ARC Raiders의 스킬 트리는 네 유형(Hunter·Explorer·Technician·Porter)으로 나누고 아홉 차례 다듬었습니다.</span><span lang="en">Unofficial concepts based on friction I encountered while playing. For THE FINALS, I proposed a see-through ESC menu and clearer reload states. For ARC Raiders, I reorganized the skill tree into four roles (Hunter, Explorer, Technician, Porter) and refined it over nine iterations.</span></p>
+
       <p class="note">Fan concept. Not sponsored by or affiliated with Embark Studios AB.</p>
     </div>
   </article>
 
-  <article class="project">
+  <article id="three-d" class="project spotlight style1 project-3">
     <div class="media three">
-      <img src="assets/img/3d-motorcycle.webp" alt="Motorcycle modeling in Blender" loading="lazy">
-      <img src="assets/img/3d-door.webp" alt="Door prop with baked textures" loading="lazy">
-      <img src="assets/img/3d-bottle.webp" alt="Bottle render" loading="lazy">
+      <a class="image-trigger" href="assets/img/homo-spatiens-sky.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/homo-spatiens-sky.webp" width="3840" height="1600" alt="Homo Spatiens cinematic: curved architecture under a blue sky" data-caption-ko="Homo Spatiens · Unreal Engine 시네마틱" data-caption-en="Homo Spatiens · Unreal Engine cinematic" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
+      <a class="image-trigger" href="assets/img/homo-spatiens-space.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/homo-spatiens-space.webp" width="3840" height="1600" alt="Homo Spatiens cinematic: a landscape beneath a planet" data-caption-ko="Homo Spatiens · Unreal Engine 시네마틱" data-caption-en="Homo Spatiens · Unreal Engine cinematic" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
+      <a class="image-trigger" href="assets/img/homo-spatiens-interior.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/homo-spatiens-interior.webp" width="3840" height="1600" alt="Homo Spatiens cinematic: curved interior and a figure" data-caption-ko="Homo Spatiens · Unreal Engine 시네마틱" data-caption-en="Homo Spatiens · Unreal Engine cinematic" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
     </div>
-    <div class="text">
+    <div class="text content">
       <p class="meta"><span lang="ko">GCC사관학교 2기 3D 디자이너 과정 · 2025.03~10 · 과정 1등</span><span lang="en">GCC Academy 3D designer course · Mar–Oct 2025 · Ranked 1st</span></p>
-      <h3><span lang="ko">3D 하드서피스 모델링 · 실시간 연출</span><span lang="en">3D hard-surface modeling · Real-time scenes</span></h3>
-      <p><span lang="ko">Blender 모델링 → Substance Painter 텍스처 → Unreal Engine 5 장면·Niagara VFX·시네마틱·nDisplay까지 이어지는 과정을 거쳤습니다.</span><span lang="en">Worked the full pipeline: Blender modeling, Substance Painter texturing, then Unreal Engine 5 scenes, Niagara VFX, cinematics, and nDisplay.</span></p>
-      <ul>
-        <li><span lang="ko">시온미디어(2025.07): 영상용 소품 4종 모델링·재질·텍스처, 폴리곤 과다·UV 낭비·재질 중복 문제를 찾아 기록</span><span lang="en">Sion Media (Jul 2025): four video props; found and logged excess polygons, wasted UV space, and duplicated materials</span></li>
-        <li><span lang="ko">Palm(모바일 공포 게임, 2025.08~09): 하이/로우 폴리로 나눠 소품 모델을 22,810 → 1,418 triangles로 줄임</span><span lang="en">Palm (mobile horror game, Aug–Sep 2025): split high/low poly and cut a prop from 22,810 to 1,418 triangles</span></li>
-      </ul>
+      <p class="release"><span lang="ko">Unreal Engine 시네마틱</span><span lang="en">Unreal Engine cinematic</span></p><h3>Homo Spatiens</h3>
+      <p><span lang="ko">Blender로 형태를 만들고 Substance Painter로 재질을 입혔습니다. Unreal Engine 5에서는 장면 구성과 Niagara VFX, 시네마틱, nDisplay를 다뤘습니다.</span><span lang="en">Modeled in Blender and textured in Substance Painter. In Unreal Engine 5, I worked on scene composition, Niagara VFX, cinematics, and nDisplay.</span></p>
+      <details class="evidence"><summary><span lang="ko">같은 과정의 기업 연계 교육 (교육생 신분)</span><span lang="en">Company-linked training in the same course (as a trainee)</span></summary><ul>
+        <li><span lang="ko">시온미디어(2025.07): 영상용 소품 4종의 모델링·재질·텍스처를 맡았고, 폴리곤 과다·UV 낭비·재질 중복 문제를 찾아 기록</span><span lang="en">Sion Media (Jul 2025): four video props; found and logged excess polygons, wasted UV space, and duplicated materials</span></li>
+        <li><span lang="ko">Palm(모바일 공포 게임, 2025.08~09): 소품 하나를 하이 폴리 22,810, 로우 폴리 1,418 triangles로 나눠 제작</span><span lang="en">Palm (mobile horror game, Aug–Sep 2025): built one prop as a 22,810-triangle high poly and a 1,418-triangle low poly</span></li>
+      </ul></details>
     </div>
   </article>
 
-  <article class="project">
-    <div class="text wide">
-      <p class="meta"><span lang="ko">개인용 도구 · 2026.07~08</span><span lang="en">Personal tool · Jul–Aug 2026</span></p>
-      <h3>d2o</h3>
-      <p class="sub"><span lang="ko">Discord → Obsidian 자동 수집 도구</span><span lang="en">Discord → Obsidian collector</span></p>
-      <p><span lang="ko">기획·설계·명세·테스트 검증·운영을 맡았고 구현은 AI 코딩 도구가 했습니다. 첨부 다운로드에 실패하면 노트를 쓰지 않는 안전장치를 명세에 넣어 중복과 누락을 막았고, 로컬 테스트 11개 통과와 재실행 시 중복 0건을 확인한 뒤 직접 썼습니다.</span><span lang="en">I owned planning, design, specs, test verification, and operation; AI tools did the implementation. The spec refuses to write a note when an attachment fails to download, which prevents duplicates and gaps. 11 local tests passed and re-runs produced zero duplicates before I put it to daily use.</span></p>
-    </div>
-  </article>
-
-  <article class="project">
+  <article id="drawing" class="project archive-project project-5">
     <div class="media two square">
-      <img src="assets/img/drawing-1.webp" alt="Pencil drawing" loading="lazy">
-      <img src="assets/img/drawing-2.webp" alt="Pencil drawing of dogs" loading="lazy">
+      <a class="image-trigger" href="assets/img/drawing-1.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/drawing-1.webp" width="1079" height="1079" alt="Pencil drawing" data-caption-ko="연필 드로잉" data-caption-en="Pencil drawing" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
+      <a class="image-trigger" href="assets/img/drawing-2.webp" aria-label="이미지 크게 보기 / View image"><img src="assets/img/drawing-2.webp" width="1079" height="1079" alt="Pencil drawing of dogs" data-caption-ko="연필 드로잉" data-caption-en="Pencil drawing" loading="lazy"><span class="zoom-mark" aria-hidden="true">↗</span></a>
     </div>
-    <div class="text">
+    <div class="text content">
       <p class="meta"><span lang="ko">드로잉 · 입시 미술 2018~2020</span><span lang="en">Drawing · Art school prep 2018–2020</span></p>
       <h3><span lang="ko">드로잉</span><span lang="en">Drawing</span></h3>
-      <p><span lang="ko">시각 기초는 손그림에서 왔습니다. 더 많은 그림은 Instagram에 모아 두었습니다.</span><span lang="en">My visual foundation comes from drawing by hand. More on Instagram.</span></p>
+      <p><span lang="ko">손으로 그리며 형태와 명암을 익혔습니다. 다른 그림은 Instagram에서 볼 수 있습니다.</span><span lang="en">Drawing by hand taught me to study form, light, and shadow. More work is on Instagram.</span></p>
       <p class="links"><a href="https://www.instagram.com/kmg_artndesign/">@kmg_artndesign</a></p>
     </div>
   </article>
@@ -115,11 +96,11 @@
   <h2><span lang="ko">소개</span><span lang="en">About</span></h2>
   <div class="grid">
     <div>
-      <h4><span lang="ko">할 줄 아는 것</span><span lang="en">What I've built with</span></h4>
+      <h4><span lang="ko">작업 도구와 방식</span><span lang="en">Tools &amp; practice</span></h4>
       <dl>
         <dt>UI/UX</dt><dd><span lang="ko">Figma 화면·컴포넌트, FigJam 사용자 흐름, 기능 단위 구현 명세</span><span lang="en">Figma screens and components, FigJam user flows, feature-level specs</span></dd>
-        <dt><span lang="ko">AI 활용 구현</span><span lang="en">AI-assisted build</span></dt><dd><span lang="ko">Claude Code·Codex에 구현을 맡기고 명세 대조·브라우저 확인·수정 지시</span><span lang="en">Hand implementation to Claude Code and Codex, then verify against the spec in the browser and direct fixes</span></dd>
-        <dt><span lang="ko">웹</span><span lang="en">Web</span></dt><dd><span lang="ko">HTML·CSS·JavaScript 결과물 검수, React·TypeScript 공부 중</span><span lang="en">Review HTML, CSS, JavaScript output; learning React and TypeScript</span></dd>
+        <dt><span lang="ko">구현·검수</span><span lang="en">Build &amp; review</span></dt><dd><span lang="ko">AI 코딩 도구로 구현하고 설계와 실제 동작을 대조하며 검수</span><span lang="en">Build with AI coding tools, then check the design and behavior in the browser</span></dd>
+        <dt><span lang="ko">웹</span><span lang="en">Web</span></dt><dd><span lang="ko">HTML·CSS·JavaScript 화면 검수, React·TypeScript 학습 중</span><span lang="en">Review HTML, CSS, JavaScript output; learning React and TypeScript</span></dd>
         <dt>3D</dt><dd>Blender, Substance 3D Painter, Unreal Engine 5, Rhino</dd>
         <dt><span lang="ko">협업</span><span lang="en">Collaboration</span></dt><dd>Git, GitHub, Jira, Notion, Obsidian</dd>
       </dl>
@@ -148,7 +129,8 @@
 </section>
 </main>
 
-<footer><p>© 2026 Kim Myeong-gi</p></footer>
+<footer><p>© 2026 Kim Myeong-gi</p><p>Layout adapted from <a href="https://html5up.net/story">Story by HTML5 UP</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br><span lang="ko">작품과 글: 김명기 · 레이아웃과 인터랙션은 고쳐서 사용</span><span lang="en">Work &amp; content: Kim Myeong-gi · Layout and interactions modified</span></p></footer>
+<dialog id="image-viewer" aria-label="작업 이미지 / Work image"><form method="dialog"><button class="viewer-close" aria-label="닫기 / Close">×</button></form><img alt=""><p class="viewer-caption"></p></dialog>
 <script src="assets/main.js"></script>
 </body>
 </html>
