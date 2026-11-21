@@ -1,0 +1,1 @@
+Layout adapted from Story by HTML5 UP / AJ, https://html5up.net/story. CC BY 3.0. Uses adapted banner/spotlight responsive structure, rewritten typography and gallery presentation, native disclosure and image dialog. No template stock photos, icon fonts, jQuery or external runtime scripts included. Existing portfolio artwork retains original rights.

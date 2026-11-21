@@ -1,0 +1,6 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert');
+const attrs={},hooks={},image={},caption={};let focused=false;
+const dialog={open:false,showModal(){this.open=true},close(){this.open=false;hooks.close()},querySelector:s=>s==='img'?image:caption,addEventListener:(e,f)=>hooks[e]=f};
+const link={href:'https://test.invalid/art.webp',querySelector:()=>({alt:'Artwork'}),addEventListener:(e,f)=>hooks.open=f,focus:()=>focused=true};
+const button={textContent:'',addEventListener(){}};const context={document:{documentElement:{setAttribute:(k,v)=>attrs[k]=v,getAttribute:k=>attrs[k]},getElementById:id=>id==='lang'?button:dialog,querySelectorAll:()=>[link]},localStorage:{getItem:()=>null,setItem(){}},location:{search:'?lang=en'},URLSearchParams};
+vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'..','assets/main.js'),'utf8'),context);assert.equal(attrs.lang,'en');let prevented=false;hooks.open({preventDefault:()=>prevented=true});assert(prevented&&dialog.open);assert.equal(image.src,link.href);assert.equal(image.alt,'Artwork');hooks.click({target:dialog});assert(!dialog.open&&focused);hooks.open({preventDefault(){}});assert(dialog.open);console.log('dialog open / backdrop close / restore focus / reopen passed');
